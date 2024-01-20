@@ -1,0 +1,56 @@
+body {
+  background-image: url('bg_quizpage.png');
+  background-size: cover !important;
+  background-attachment: fixed; /* Keeps the background fixed */
+  height: 100%;
+  margin: 0; /* Remove default margin */
+}
+
+.question-form {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+  
+  .center-text {
+    text-align: left;
+    font-weight: bold;
+    font-style: italic;
+    padding: 5px;
+    border-radius: 10px;
+    margin: 10px 0;
+  }
+
+  .round-input {
+    border-radius: 10px;
+    margin: 5px !important;
+  }
+  
+  .center-button {
+    display: inline-block;
+    margin-top: 10px;
+  }
+  
+  .grow-on-hover:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s;
+  }
+
+ 
+::-webkit-scrollbar {
+  background-color: rgba(210, 19, 19, 0) !important;
+  width: 12px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+  opacity: 0;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(.5, #e5ff00), color-stop(1,#ff006f));
+  border-radius: 10px;
+}
+  

@@ -1,0 +1,111 @@
+/* QuestionQuiz.css */
+
+.quiz-page-container {
+  background-image: url('bg_quizpage.png');
+  background-size: cover !important;
+  background-attachment: fixed; /* Keeps the background fixed */
+  height: 100%;
+  margin: 0; /* Remove default margin */
+}
+
+.QuestionQuiz {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 90vh; /* Set the height to 90% of the viewport height */
+    width: 100vw; /* Set the width to 100% of the viewport width */
+    padding: 50px; /* Adjust padding as needed */
+    box-sizing: border-box; /* Include padding and border in the element's total width */
+  }
+  
+  h1 {
+    text-align: center;
+    color: #000000;
+  }
+  
+  /* Quiz Content */
+  .QuizContent {
+    width: 100%;
+    max-width: 600px; /* Adjust the max width as needed */
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Question and Points */
+  h2 {
+    text-align: center;
+  }
+  
+  /* Options */
+  .Options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 20px;
+  }
+
+  .Option.selected {
+    background-color: #007bff; /* You can choose any color you like */
+    color: #fff; /* Text color for selected option */
+  }
+  
+  /* Individual Option Styles */
+  .Option {
+    width: calc(50% - 10px); /* 50% width with margin in between */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+
+    transition: background-color 0.3s, transform 0.3s;
+   cursor: pointer;
+
+    /* Apply hover effect */
+    &:hover {
+        background-color: #0056b3; /* Change color on hover */
+        transform: scale(1.1); /* Grow on hover */
+    }
+  }
+  
+  /* Result Message */
+  .ResultMessage {
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  /* Buttons */
+  .Buttons {
+    text-align: center;
+    margin: 20px;
+  }
+  
+  .Buttons button {
+    background: linear-gradient(to right, rgb(222, 90, 90), rgb(241, 144, 144)); /* Red gradient by default */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, transform 0.3s; /* Transition for color change and hover effect */
+  }
+  
+  .Buttons button:hover {
+    background: linear-gradient(to right, green, green); /* Green gradient on hover */
+    transform: scale(1.05); /* Grow on hover */
+  }
+  
+
+  .Question {
+    border: 2px solid #007bff; /* Add a border around the question */
+    border-radius: 5px; /* Add some border radius for rounded corners */
+    padding: 10px; /* Add some padding inside the box */
+    font-weight: bold; /* Make the text bold */
+    font-style: italic; /* Make the text italic */
+    width: 100%; /* Make the box width 100% to fit from left to right */
+    text-align: center; /* Center the text horizontally */
+  }
+  
+  
+  /* Adjust any additional styles or margins as needed */

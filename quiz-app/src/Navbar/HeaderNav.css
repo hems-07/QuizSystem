@@ -1,0 +1,41 @@
+/* Add this CSS for menu items */
+.navbar {
+  background-color: #25283D;
+  color: #ffffff;
+  
+}
+
+.navbar .menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .menu li {
+  flex: 1;
+  text-align: center;
+  transition: background-color 0.5s ease;
+  list-style: none;
+}
+
+.navbar .menu a {
+  flex: 1;
+  justify-content: center;
+  display: inline-flex;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 20px;
+  position: relative;
+  white-space: nowrap; /* Add this line to prevent wrapping */
+}
+
+.navbar .menu li:hover {
+  background-color: #8F3985;
+}
+
+.navbar .menu li:hover .container {
+  display: flex;
+}

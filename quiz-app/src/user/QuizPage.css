@@ -1,0 +1,130 @@
+body {
+  background-image: url('bg_quizpage.png');
+  background-size: cover !important;
+  background-attachment: fixed; /* Keeps the background fixed */
+  height: 100%;
+  margin: 0; /* Remove default margin */
+}
+
+.technology-block {
+  padding: 20px;
+  border: 1px solid transparent;
+  background-color: #f9f9f9;
+  border-radius: 20px; /* Adjust the radius to your preference */
+  background-image: linear-gradient(to right, #ff66b2, #826aff); /* Adjust gradient colors */
+}
+  
+  .technology-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .enter-button {
+    color: #000;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s; /* Add a transition for the hover effect */
+  }
+  
+  .enter-button:hover {
+    transform: scale(1.05); /* Grow the button on hover */
+  }
+  
+  .enter-button:focus {
+    outline: none; /* Remove the outline when the button is focused */
+  }
+  
+  .box{
+    position:initial;
+}
+  .search-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    color: #ffd52d;
+    transition: .2s;
+    visibility: hidden;
+  }
+  
+  .input:focus + .search-icon {
+    visibility: visible;
+  }
+  
+  h1 {
+    color: #fff;
+  }
+
+.input {
+    margin: 5px;
+    margin-left: 63vh;
+    padding: 12px;
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: 4px solid #63f56f;
+    border-radius: 50px;
+    box-sizing: border-box;
+    font-family: Comic Sans MS;
+    font-size: 26px;
+    color: #ffd52d;
+    outline: none;
+    transition: .5s;
+}
+.box:hover input{
+    width: 350px;
+    background: #3b3640;
+    border-radius: 10px;
+}
+.box i{
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translate(-50%,-50%);
+    font-size: 26px;
+    color: #ffd52d;
+    transition: .2s;
+}
+.box:hover i{
+    opacity: 0;
+    z-index: -1;
+}
+
+button {
+  --b: 3px;   /* border thickness */
+  --s: .15em; /* size of the corner */
+  --c: #BD5532;
+  
+  padding: calc(.05em + var(--s)) calc(.3em + var(--s));
+  color: var(--c);
+  --_p: var(--s);
+  background:
+    conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--c) 0)
+    var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+  transition: .3s linear, color 0s, background-color 0s;
+  outline: var(--b) solid #0000;
+  outline-offset: .2em;
+}
+button:hover,
+button:focus-visible{
+  --_p: 0px;
+  outline-color: var(--c);
+  outline-offset: .05em;
+}
+button:active {
+  background: var(--c);
+  color: #fff;
+}
+
+button {
+  font-family: system-ui, sans-serif;
+  font-weight: bold;
+  font-size: 4rem;
+  cursor: pointer;
+  border: none;
+  margin: .1em;
+}

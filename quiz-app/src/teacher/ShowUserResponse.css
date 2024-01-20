@@ -1,0 +1,27 @@
+.quiz-page-container {
+  background-image: url('bg_quizpage.png');
+  background-size: cover !important;
+  background-repeat:repeat-y;
+  height: 100vh;
+  margin-top: auto;
+}
+
+.response-panel {
+    transition: max-height 1s ease !important;
+    max-height: 0;
+    overflow: hidden;
+    /* Additional styles... */
+  }
+  .response-panel.open {
+    max-height: 1000px;
+    /* Additional styles... */
+  }
+    
+  h1{
+    font-size: 30px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 15px;
+  }
